@@ -1,0 +1,15 @@
+* { 
+    outline: 2px solid red;
+}
+
+body { 
+    margin: 0;
+    border: 0;
+    height: 100vh; 
+}
+
+.MainPage { 
+    margin: 0;
+    border: 0;
+    height: auto; 
+}
