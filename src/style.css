@@ -12,4 +12,30 @@ body {
     margin: 0;
     border: 0;
     height: auto; 
+    display: grid;
+    grid-template-columns: minmax(150px, 0.5fr) 2fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+
+/*Header Div + Styles*/
+.HeaderSection { 
+    grid-row: 1;
+    grid-column: span 2;
+}
+
+/*Side Bar Div + Styles*/
+.SideBarSection { 
+    grid-column: span 1;
+    grid-row: 2 / span 3;
+}
+
+
+/*Main Content Divs + Styles (All are off unless a option is pressed otherwise)*/
+
+
+/*Footer Div + Styles*/
+.FooterSection {
+    grid-row: 4;
+    grid-column: span 2;
 }
