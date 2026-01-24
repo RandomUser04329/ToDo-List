@@ -11,9 +11,9 @@ body {
 .MainPage { 
     margin: 0;
     border: 0;
-    height: auto; 
+    height: auto;
     display: grid;
-    grid-template-columns: minmax(150px, 0.5fr) 2fr;
+    grid-template-columns: minmax(200px, 0.7fr) 2fr;
     grid-template-rows: repeat(auto-fit, 1fr);
 }
 
@@ -22,6 +22,29 @@ body {
 .HeaderSection { 
     grid-row: 1;
     grid-column: span 2;
+    display: grid;
+    grid-template-columns: minmax(200px, 0.7fr) 2fr;
+    grid-template-rows: 1fr;
+    height: 75px;
+    width: auto;
+}
+
+.WelcomeBox { 
+    grid-column: 1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.WelcomeHeader { 
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    border: 0;
+    cursor: pointer;
+    background: none;
+    font-size: auto;
+    justify-self: start;
 }
 
 /*Side Bar Div + Styles*/
@@ -32,10 +55,15 @@ body {
 
 
 /*Main Content Divs + Styles (All are off unless a option is pressed otherwise)*/
-
+section[class] { 
+    grid-row: 3;
+    grid-column: 2;
+}
 
 /*Footer Div + Styles*/
 .FooterSection {
     grid-row: 4;
     grid-column: span 2;
+    height: 75px;
+    width: auto;
 }
