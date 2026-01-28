@@ -65,19 +65,35 @@ body {
     grid-column: span 1;
     grid-row: 2 / span 2;
     display: grid;
-    grid-template-columns: minmax(200px, 400px);
-    grid-template-rows: repeat(3, minmax(100px, 300px))
+    grid-template-columns: minmax(200px, 300px);
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr))
 }
 
 /* Side Bar sections + Styles */
 .DashBoardNav, 
-.CreateNav,
-.ProjectsNav {
+.CreateNav {  
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, 75px);
+    grid-template-rows: repeat(auto-fit, 30px);
+    justify-items: start;
+    align-content: start;
     padding: 5px;
 }
+
+.ProjectsNav {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 55px);
+    justify-items: start;
+    align-content: start;
+    padding: 5px;
+}
+
+.ProjectHeader { 
+    width: auto;
+    height: 30px;
+}
+
 
 .SideBarSection > nav > button { 
     padding: 0;
